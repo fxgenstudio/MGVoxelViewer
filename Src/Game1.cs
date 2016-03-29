@@ -25,6 +25,9 @@ namespace VoxelViewer
     public Game1()
     {
       graphics = new GraphicsDeviceManager(this);
+      graphics.PreferredBackBufferHeight = 1080;
+      graphics.PreferredBackBufferWidth = 1920;
+      graphics.IsFullScreen = false;
       m_cam = new OrbitCamera(this);
 
       Content.RootDirectory = "Content";
@@ -109,7 +112,6 @@ namespace VoxelViewer
       {
         m_voxelBrush.Draw(m_cam.View, m_cam.Projection);
       }
-
       base.Draw(gameTime);
     }
 

@@ -10,6 +10,7 @@
 
 #-------------------------------- References --------------------------------#
 
+/reference:../packages/InfinitespaceStudios.Pipeline.1.0.1/tools/InfinitespaceStudios.Pipeline.dll
 
 #---------------------------------- Content ---------------------------------#
 
@@ -27,7 +28,16 @@
 
 #begin CubeBrushShader.fx
 /importer:EffectImporter
-/processor:EffectProcessor
+/processor:RemoteEffectProcessor
+/processorParam:RemoteAddress=pipeline.infinitespace-studios.co.uk
+/processorParam:RemotePort=443
+/processorParam:Protocol=https
 /processorParam:DebugMode=Auto
 /build:CubeBrushShader.fx
+
+#begin monu1.vox
+/copy:monu1.vox
+
+#begin monu9.vox
+/copy:monu9.vox
 
