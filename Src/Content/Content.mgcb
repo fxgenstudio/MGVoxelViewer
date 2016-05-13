@@ -3,7 +3,7 @@
 
 /outputDir:..\Content
 /intermediateDir:obj/Windows
-/platform:Windows
+/platform:DesktopGL
 /config:
 /profile:Reach
 /compress:False
@@ -28,11 +28,8 @@
 
 #begin CubeBrushShader.fx
 /importer:EffectImporter
-/processor:RemoteEffectProcessor
-/processorParam:RemoteAddress=pipeline.infinitespace-studios.co.uk
-/processorParam:RemotePort=443
-/processorParam:Protocol=https
-/processorParam:DebugMode=Auto
+/processor:EffectProcessor
+/processorParam:DebugMode=Optimize
 /build:CubeBrushShader.fx
 
 #begin monu1.vox
@@ -40,4 +37,10 @@
 
 #begin monu9.vox
 /copy:monu9.vox
+
+#begin DebugFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:DebugFont.spritefont
 

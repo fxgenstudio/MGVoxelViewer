@@ -15,7 +15,9 @@ MGVoxelViewer executable is in Build folder.
 
 # Versions
 
-Creation
+V1.1
+ - added FPS and RulerBars
+ - project used now OpenGL
 
 # License
 

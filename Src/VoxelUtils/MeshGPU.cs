@@ -43,7 +43,6 @@ namespace FxVoxelUtils
     public BoundingBox m_bb;
     public BoundingSphere m_bs;
 
-    BasicEffect m_BBEffect;
     #endregion
 
     public MeshGPU()
