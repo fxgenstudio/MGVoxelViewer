@@ -144,7 +144,7 @@ namespace MGVoxelViewer.DebugTools
                 new Rectangle(0, 0, (int)(size.X * 14f), (int)(size.Y * 1.3f));
 
             Layout layout = new Layout(spriteBatch.GraphicsDevice.Viewport);
-            rc = layout.Place(rc, 0.01f, 0.01f, Alignment.TopLeft);
+            rc = layout.Place(rc, 0.01f, 0.01f, Alignment.TopRight);
 
             // Place FPS string in border area.
             size = font.MeasureString(stringBuilder);

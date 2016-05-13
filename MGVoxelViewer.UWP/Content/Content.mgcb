@@ -1,0 +1,46 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:..\Content
+/intermediateDir:obj/Windows
+/platform:WindowsStoreApp
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:../packages/InfinitespaceStudios.Pipeline.1.0.1/tools/InfinitespaceStudios.Pipeline.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Border.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Border.png
+
+#begin CubeBrushShader.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Optimize
+/build:CubeBrushShader.fx
+
+#begin monu1.vox
+/copy:monu1.vox
+
+#begin monu9.vox
+/copy:monu9.vox
+
+#begin DebugFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:DebugFont.spritefont
+
