@@ -84,7 +84,11 @@ namespace FxVoxelUtils
 
             SmallCube cube = new SmallCube();
 
+#if ANDROID
+            while (_br.BaseStream.IsDataAvailable())
+#else
             while (_br.BaseStream.Position < _br.BaseStream.Length)
+#endif
             {
 
                 string chunkName = new string(_br.ReadChars(4));
