@@ -99,7 +99,7 @@ namespace MGVoxelViewer
             m_cam.Update(0);
 
             //Rotation
-            m_fAngle += (float)(gameTime.ElapsedGameTime.Milliseconds / 1000.0);
+            m_fAngle += (float)((float)gameTime.ElapsedGameTime.Milliseconds / 1000.0);
 
             //Update VoxelBrush world Matrix
             if (m_voxelBrush != null)
